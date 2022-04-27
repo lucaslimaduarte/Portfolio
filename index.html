@@ -35,7 +35,7 @@
 								<h1>Olá, me chamo  <strong>Lucas de Lima Duarte</strong>.</h1>
 							</header>
 							<p>Sou um UX designer jr. com um background de 5 anos de design de produtos fisicos </p>
-							<a href="images/CV.pdf" class="button large scrolly">Meu curriculo</a>
+							<a href="images/CV.pdf" download="CV_Lucas_de_Lima_Duarte" class="button large scrolly">Baixar CV</a>
 						</div>
 					</div>
 				</div>
@@ -122,23 +122,23 @@
 					</header>
 					<div class="row">
 						<div class="col-12">
-							<form method="post" action="#">
+							<form action="https://formsubmit.co/lucasdelimaduarte@gmail.com" method="POST">
 								<div class="row">
 									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Nome" />
+										<input type="text" name="name" id="name" placeholder="Nome" required/>
 									</div>
 									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
+										<input type="text" name="email" id="email" placeholder="Email" required/>
 									</div>
 									<div class="col-12">
-										<input type="text" name="subject" id="subject" placeholder="Assunto" />
+										<input type="text" name="subject" id="subject" placeholder="Assunto" required/>
 									</div>
 									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Messagem"></textarea>
+										<textarea name="message" id="message" placeholder="Messagem"required></textarea>
 									</div>
 									<div class="col-12">
 										<ul class="actions">
-											<li><input type="submit" value="Enviar email" /></li>
+											<li><button type="submit">Send</button></li>
 											
 										</ul>
 									</div>
