@@ -74,8 +74,8 @@
 										<img src="images/pic02.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Tempus</a></h3>
-										<p>feugiat amet tempus</p>
+										<h3><a href="https://medium.com/@lucasdelimaduarte/arttes-permitindo-que-tatuadores-foquem-na-sua-arte-e3bf76ec5441" class="link">Arttes</a></h3>
+										<p>(case ainda em construção) Case feito individualmente, onde explorei mais algumas ferramentas de negocio.</p>
 									</header>
 								</article>
 								<article>
@@ -83,8 +83,8 @@
 										<img src="images/pic03.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Magna</a></h3>
-										<p>Lorem etiam nullam</p>
+										<h3><a href="https://www.figma.com/proto/Xcw436r8v3SgD3lsTBhg24/Test_1?node-id=1%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A2" class="link">Vottz</a></h3>
+										<p>Meu primeiro protótipo de UI feito em 2020 no Figma </p>
 									</header>
 								</article>
 								<article>
@@ -122,10 +122,32 @@
 									<header class="major">
 										<h2>Sobre mim</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-									<ul class="actions">
-										<li><a href="landing.html" class="button">Ver mais</a></li>
-										<li><a href="landing.html" class="button">Baixar meu CV</a></li>
+									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem.
+									 In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
+									  libero. <span id="pontos">...</span>  <span id="mais"> aliquet magna magna sed nunc rhoncus amet pharetra et fe
+										  a´slkjndfa´lskdna´lsdkna´lsdnkalsdnalsdnalsdnalksndklasndlaknsdlkansdlkanskldugiat tempus.</span></p>
+										
+										<script >
+										function leiaMais(){
+											var pontos=document.getElementById("pontos");
+											var maisTexto=document.getElementById("mais");
+											var btnLeiaMais=document.getElementById("btnLeiaMais");
+										
+											if(pontos.style.display === "none"){
+												pontos.style.display="inline";
+												maisTexto.style.display="none";
+												btnLeiaMais.innerHTML="Leia Mais";
+												
+											}else{
+												pontos.style.display="none";
+												maisTexto.style.display="inline";
+												btnLeiaMais.innerHTML="Leia Menos";
+											}
+										
+										}</script>
+										  <ul class="actions">
+										<li><button onclick="leiaMais()" id="btnLeiaMais">Leia mais</button></li>
+										<li><a  href="images/CV.pdf" download="CV Lucas de Lima Duarte" class="button">Baixe meu CV</a></li>
 									</ul>
 								</div>
 							</section>
@@ -136,23 +158,26 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="#">
+								<form action="https://formsubmit.co/lucasdelimaduarte@gmail.com" method="POST">
 									<div class="fields">
 										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<label for="name">Nome</label>
+											<input type="text" name="name" id="name" required/>
 										</div>
 										<div class="field half">
 											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<input type="text" name="email" id="email"  required/>
+											
 										</div>
+										
 										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="6"></textarea>
+											<label for="message">Mensagem</label>
+											<textarea name="message" id="message" required></textarea>
 										</div>
+										<input type="hidden" name="_next" value="https://lucaslimaduarte.github.io/Portfolio/">
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="submit" value="Enviar" class="primary" /></li>
 										
 									</ul>
 								</form>
@@ -162,23 +187,22 @@
 									<div class="contact-method">
 										<span class="icon solid alt fa-envelope"></span>
 										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
+										<span>lucasdelimaduarte@gmail.com</span>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
 										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>(000) 000-0000 x12387</span>
+										<h3>Whatsapp</h3>
+										<span>(85) 99792-9251</span>
 									</div>
 								</section>
 								<section>
 									<div class="contact-method">
 										<span class="icon solid alt fa-home"></span>
-										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
+										<h3>Endereço</h3>
+										<span>Fortaleza - CE<br />
+										Brasil</span>
 									</div>
 								</section>
 							</section>
@@ -189,14 +213,13 @@
 					<footer id="footer">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								
+								<li><a href="https://www.instagram.com/lucas.limad/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://github.com/lucaslimaduarte" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/lucasdelimaduarte/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Untitled</li><li>Site criado com base no template : <a href="https://html5up.net/forty">HTML5 UP - Forty</a></li>
 							</ul>
 						</div>
 					</footer>
@@ -211,6 +234,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/leiaMais.js"></script>
 
 	</body>
 </html>
